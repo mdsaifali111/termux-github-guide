@@ -2,9 +2,6 @@ Termux + GitHub: Complete Guide
 
 A beginner-friendly, mobile-first Git + GitHub workflow powered entirely via Termux on Android. This guide walks you through GitHub concepts and practical use in 7 easy chapters.
 
-
----
-
 Table of Contents
 
 1. Introduction to Termux
@@ -29,9 +26,6 @@ Table of Contents
 
 
 
-
----
-
 Chapter 1: Introduction to Termux
 
 Termux is a terminal emulator and Linux environment app for Android. It allows you to:
@@ -45,13 +39,10 @@ Install Git, Python, Node.js, and more
 Perform real development work on your mobile device
 
 
-Installation:
+Installation
 
 pkg update && pkg upgrade
 pkg install git nano curl wget
-
-
----
 
 Chapter 2: Introduction to GitHub
 
@@ -67,9 +58,6 @@ Contribute to open-source
 
 
 You’ll interact with GitHub using git commands via Termux.
-
-
----
 
 Chapter 3: Setting Up Git & GitHub in Termux
 
@@ -101,9 +89,6 @@ Paste the key and save
 
 ssh -T git@github.com
 
-
----
-
 Chapter 4: Basic Git Workflow in Termux
 
 1. Create New Repo
@@ -122,9 +107,6 @@ git commit -m "Initial commit"
 
 git remote add origin git@github.com:username/repo.git
 git push -u origin master
-
-
----
 
 Chapter 5: Pushing & Managing Repositories from Termux
 
@@ -147,40 +129,48 @@ git rm oldfile.txt
 git commit -m "Removed unused file"
 git push
 
-
----
-
 Chapter 6: Advanced Git Operations in Termux
 
-View logs: git log --oneline
+View logs:
 
-Undo changes: git checkout -- filename
+git log --oneline
 
-Undo commit: git reset --soft HEAD~1
+Undo changes:
 
-Aliases: git config --global alias.co checkout
+git checkout -- filename
 
-Tag a release: git tag v1.0 && git push origin v1.0
+Undo commit:
 
-Stash work: git stash && git stash pop
+git reset --soft HEAD~1
 
-Revert commit: git revert <commit>
+Set aliases:
 
+git config --global alias.co checkout
 
+Tag a release:
 
----
+git tag v1.0 && git push origin v1.0
+
+Stash work:
+
+git stash && git stash pop
+
+Revert commit:
+
+git revert <commit>
+
 
 Chapter 7: Hosting and Collaborating on GitHub from Termux
 
-Fork a repo and clone:
+Fork a repo and clone
 
 git clone git@github.com:you/forked-repo.git
 
-Create new branch:
+Create new branch
 
 git checkout -b new-feature
 
-Push and open pull request.
+Push and open pull request
 
 Sync fork with upstream
 
@@ -196,9 +186,6 @@ Push to gh-pages branch
 
 URL: https://yourusername.github.io/repo
 
-
-
----
 
 Thanks for Reading!
 
