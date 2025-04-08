@@ -1,7 +1,6 @@
 Termux + GitHub: Complete Guide
 
-A beginner-friendly, mobile-first Git + GitHub workflow powered entirely via Termux on Android.
-This guide walks you through GitHub concepts and practical use in 7 easy chapters.
+A beginner-friendly, mobile-first Git + GitHub workflow powered entirely via Termux on Android. This guide walks you through GitHub concepts and practical use in 7 easy chapters.
 
 
 ---
@@ -194,12 +193,15 @@ git push origin main
 Host websites with GitHub Pages
 
 Push to gh-pages branch
+
 URL: https://yourusername.github.io/repo
+
 
 
 ---
 
 Thanks for Reading!
+
 This guide is 100% mobile-optimized. Clone, edit, and commit code anytime — from your Android phone using Termux.
 
 Happy Hacking!
