@@ -37,18 +37,18 @@ Chapter 1: Introduction to Termux
 
 Termux is a terminal emulator and Linux environment app for Android. It allows you to:
 
-Run full Linux command-line utilities.
+Run full Linux command-line utilities
 
-Use apt package manager.
+Use apt package manager
 
-Install Git, Python, Node.js, and more.
+Install Git, Python, Node.js, and more
 
-Perform real development work on your mobile device.
+Perform real development work on your mobile device
 
 
 Installation:
 
-pkg update && pkg upgrade  
+pkg update && pkg upgrade
 pkg install git nano curl wget
 
 
@@ -58,13 +58,13 @@ Chapter 2: Introduction to GitHub
 
 GitHub is a web-based platform for version control using Git. With GitHub, you can:
 
-Host repositories online.
+Host repositories online
 
-Collaborate with others.
+Collaborate with others
 
-Track changes and issues.
+Track changes and issues
 
-Contribute to open-source.
+Contribute to open-source
 
 
 You’ll interact with GitHub using git commands via Termux.
@@ -80,7 +80,7 @@ pkg install git
 
 2. Configure Git
 
-git config --global user.name "Your Name"  
+git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 
 3. Generate SSH Key
@@ -92,8 +92,11 @@ Copy your public key:
 cat ~/.ssh/id_ed25519.pub
 
 Add it to GitHub:
+
 Go to Settings → SSH & GPG Keys → New SSH Key
-Paste the key and save.
+
+Paste the key and save
+
 
 4. Test SSH Connection
 
@@ -106,19 +109,19 @@ Chapter 4: Basic Git Workflow in Termux
 
 1. Create New Repo
 
-mkdir myrepo  
-cd myrepo  
+mkdir myrepo
+cd myrepo
 git init
 
 2. Add Files & Commit
 
-echo "# My Repo" > README.md  
-git add .  
+echo "# My Repo" > README.md
+git add .
 git commit -m "Initial commit"
 
 3. Push to GitHub
 
-git remote add origin git@github.com:username/repo.git  
+git remote add origin git@github.com:username/repo.git
 git push -u origin master
 
 
@@ -134,15 +137,15 @@ Update content, save changes.
 
 2. Add New File
 
-echo "My new content" > tutorial.txt  
-git add tutorial.txt  
-git commit -m "Added tutorial file"  
+echo "My new content" > tutorial.txt
+git add tutorial.txt
+git commit -m "Added tutorial file"
 git push
 
 3. Delete File
 
-git rm oldfile.txt  
-git commit -m "Removed unused file"  
+git rm oldfile.txt
+git commit -m "Removed unused file"
 git push
 
 
@@ -182,15 +185,15 @@ Push and open pull request.
 
 Sync fork with upstream
 
-git remote add upstream https://github.com/original/repo.git  
-git fetch upstream  
-git checkout main  
-git merge upstream/main  
+git remote add upstream https://github.com/original/repo.git
+git fetch upstream
+git checkout main
+git merge upstream/main
 git push origin main
 
-Host websites with GitHub Pages:
+Host websites with GitHub Pages
 
-Push to gh-pages branch.
+Push to gh-pages branch
 URL: https://yourusername.github.io/repo
 
 
